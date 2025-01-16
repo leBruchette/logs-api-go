@@ -1,0 +1,54 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE specific files
+.idea/
+.vscode/
+*.iml
+
+# Dependency directories
+vendor/
+
+# Go build artifacts
+*.o
+*.a
+*.s
+*.h
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+_testmain.go
+
+# Test binary, coverage data, and result files
+*.test
+*.cover
+*.cov
+*.prof
+*.profraw
+*.profdata
+*.gcov
+*.gcda
+*.gcno
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files created by editors
+*~
