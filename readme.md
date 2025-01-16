@@ -15,7 +15,7 @@ This project provides an API for reading log files in reverse order. It includes
 
 ### Example Request
 ```
-GET /logs?filePath=/var/log/syslog&lines=5&search=error
+GET /logs/var/log/syslog&lines=5&search=error
 ```
 
 ### Example Response
