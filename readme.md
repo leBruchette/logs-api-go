@@ -11,11 +11,11 @@ This project provides an API for reading log files in reverse order. It includes
 
 ### Query Parameters
 - `lines` (int, optional): The number of lines to read in reverse order. Default is 10.
-- `searchText` (string, optional): Text to search for within the log lines. Only lines containing this text will be returned.
+- `search` (string, optional): Text to search for within the log lines. Only lines containing this text will be returned.
 
 ### Example Request
 ```
-GET /logs?filePath=/var/log/syslog&lines=5&searchText=error
+GET /logs?filePath=/var/log/syslog&lines=5&search=error
 ```
 
 ### Example Response
