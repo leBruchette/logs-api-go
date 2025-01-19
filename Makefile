@@ -7,10 +7,7 @@ verify-deps:
 	@docker info >/dev/null 2>&1 || { echo >&2 "Docker is not running. Please start Docker"; exit 1; }
 	@echo "All dependencies are installed and Docker is running."
 
-install-gotest:
-	go get -u github.com/rakyll/gotest
-
-test: install-gotest
+test:
 	gotest -v ./...
 
 start:
