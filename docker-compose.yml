@@ -1,0 +1,10 @@
+
+services:
+  app:
+    container_name: logs-api-container
+    build: .
+    ports:
+      - "8100:8080"
+    volumes:
+      - .:/app
+      - /var/log:/var/log #only allow access to /var/log on the host machine

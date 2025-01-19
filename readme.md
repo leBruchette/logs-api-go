@@ -111,10 +111,15 @@ for _, line := range lines {
 
 This example initializes a `LineReader`, reads lines from the log file, and prints the most recent 5 lines that contain the search text "error".  The lines are read and processed in chunks, allowing for efficient handling of large files.
 
+```bash
+
 ### Make commands
 
 The `Makefile` includes the following targets for starting the application and running tests.
 
+- `verify-deps`: Verifies all dependencies are installed, currently only checks `docker-compose`.
 - `all`: The default target that runs the `start` target.
 - `start`: Runs the application by executing `main/server.go`.
 - `test`: Runs all tests in the project with colored output using `gotest`.
+- `docker-build`: Builds a Docker image using `docker-compose`.
+- `docker-run`: Runs the Docker container on port 8100 using `docker-compose`.
