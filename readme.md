@@ -111,8 +111,6 @@ for _, line := range lines {
 
 This example initializes a `LineReader`, reads lines from the log file, and prints the most recent 5 lines that contain the search text "error".  The lines are read and processed in chunks, allowing for efficient handling of large files.
 
-```bash
-
 ### Make commands
 
 The `Makefile` includes the following targets for starting the application and running tests.
