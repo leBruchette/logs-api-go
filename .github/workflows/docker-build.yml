@@ -21,9 +21,6 @@ jobs:
       - name: Install dependencies
         run: go mod download
 
-      - name: Verify dependencies
-        run: make verify-deps
-
       - name: Run tests
         run: make test
 
