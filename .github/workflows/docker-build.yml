@@ -46,5 +46,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest
+          tags: ghcr.io/lebruchette/logs-api-go:latest
           labels: ${{ steps.meta.outputs.labels }}
